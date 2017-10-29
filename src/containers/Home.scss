@@ -1,0 +1,176 @@
+@import "../styles/variables";
+
+
+.home--container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(17, 46, 73);
+  background-image: url('../images/home_background_tnc2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: luminosity;
+
+}
+
+.home--inner {
+  max-width: 80%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0px 10px 25px -5px black;
+  opacity: .98;
+  
+  header {
+    height: 100%;
+    width: 60%;
+    background: $primaryBlue;
+    color: white;
+
+    h1 {
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+      letter-spacing: 2px;
+    }
+  
+    p {
+      width: 75%;
+    }
+  }
+
+  a {
+    color: #111111;
+  }
+  
+
+  h2 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  sub {
+    margin: 0 10px;
+  }
+}
+
+.home--tab {
+  height: 25%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: default;
+  user-select: none;
+
+
+
+  &:nth-child(2) {
+    background-color: rgb(255, 226, 226)
+  }
+  
+  &:nth-child(3) {
+    background-color: rgb(255, 195, 195)
+  }
+  
+  &:nth-child(4) {
+    background-color: rgb(255, 65, 65)
+  }
+  
+  &:nth-child(5) {
+    background-color: rgb(255, 25, 25)
+  }
+}
+
+
+.home--image__texas {
+  max-height: 150px;
+  width: auto;
+  filter: drop-shadow(3px 10px 2px rgba(0,0,0,0.5));
+  transition: all 150ms ease-in-out;
+  
+  &:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(1px 5px 1px rgba(0,0,0,0.3));
+
+  }
+  
+}
+
+.home--tab {
+  // transform-origin: left center;
+  transition: all 250ms ease-in-out;
+
+  &:not(header):hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px -3px rgba(0,0,0,0.4);
+  }
+}
+
+@media screen and (max-width: $medSize) {
+  .home--container {
+    min-height: 100%;
+    overflow: initial;
+    
+    header {
+      width: 100%;
+    }
+  }
+  
+  .home--inner {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  
+  .home--tab {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $smallSize) {
+
+  .home--container {
+    background-image: none;
+    background-color: none;
+  }
+  
+  .home--inner {
+    max-width: 100%;
+    height: 100%;
+    
+    header {
+      background-color: #1630ea;
+      background-image: url('../images/home_background_tnc2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-blend-mode: overlay;
+
+      h1 {
+        font-size: 2.2em;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .home--tab {
+    padding: 25px;
+
+    &:not(header):hover {
+      transform: none;
+      filter: sepia(.3);
+      box-shadow:0 0 10px rgba(0,0,0,0.4) inset;
+    }
+  }
+}

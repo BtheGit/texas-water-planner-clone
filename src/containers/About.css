@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.about-container h4 {
+  text-decoration: underline;
+  margin: 12px 0;
+  font-size: 1.1em; }
+  .about-container h4:hover {
+    color: #017aca; }
+
+.about-container .Collapsible p {
+  margin: 0 20px 15px 30px; }
+
+.dropdown-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+  background-color: #c8c8c8;
+  box-shadow: 0 5px 15px -10px black; }
+  .dropdown-row:hover {
+    transform: scale(1.01); }
+  .dropdown-row a {
+    text-align: center;
+    padding: 12px 0; }
+    .dropdown-row a:hover {
+      background-color: #646464;
+      color: white; }
+    .dropdown-row a:first-child {
+      width: 80%;
+      text-align: left;
+      padding-left: 25px; }
+      .dropdown-row a:first-child:after {
+        content: '';
+        display: inline-block;
+        background-image: url("../images/icon_pdf.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 1em;
+        width: 1em;
+        margin-left: 10px; }
+    .dropdown-row a:last-child {
+      width: 20%;
+      background-color: #ffc832; }
+      .dropdown-row a:last-child:after {
+        content: '❱';
+        margin-left: 15px; }
+      .dropdown-row a:last-child:hover {
+        background-color: #f0ac00; }

@@ -1,0 +1,32 @@
+.Collapsible__trigger {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  background: #4d6580;
+  color: white;
+  padding: 10px;
+  margin: .75em 0;
+  box-shadow: 0 10px 25px -10px black;
+  padding-left: 25px;
+
+  &:after {
+    content: '⧽';
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    display: block;
+    transform: rotateZ(90deg);
+    transition: transform 300ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(270deg);
+    }
+  }
+}
+
+.Collapsible__contentInner {
+  padding: 20px;
+}

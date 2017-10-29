@@ -1,0 +1,33 @@
+
+
+#water-text {
+  display: block;
+  width: max-content;
+  height: auto;
+}
+
+.water-text {
+  display: flex;
+}
+
+.water-fill {
+  animation: wave 1.5s infinite linear, fill-up 10s infinite ease-out alternate;
+}
+
+@keyframes wave {
+  0% {
+    x: -100%;
+  }
+  100% {
+    x: 0;
+  }
+}
+
+@keyframes fill-up {
+  0% {
+    y: 20%;
+  }
+  100% {
+    y: 40%;
+  }
+}

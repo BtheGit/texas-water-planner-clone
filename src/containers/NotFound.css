@@ -1,0 +1,21 @@
+.notfound-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #5855ff;
+  background-image: url("../images/texas-white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: overlay;
+  color: white;
+  font-size: 4em;
+  font-weight: 700; }
+
+@media screen and (min-width: 700px) {
+  .notfound-container {
+    font-size: 6em; } }

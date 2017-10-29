@@ -1,0 +1,76 @@
+@import "../styles/variables";
+
+.about-container {
+
+
+  h4 {
+    text-decoration: underline;
+    margin: 12px 0;
+    font-size: 1.1em;
+
+    &:hover {
+      color: rgb(1, 122, 202);
+    }
+  }
+
+  .Collapsible {
+    p {
+      margin: 0 20px 15px 30px;
+    }
+  }
+}
+
+
+.dropdown-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+  background-color: $lightBlack;
+  box-shadow: 0 5px 15px -10px black;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  a {
+    text-align: center;
+    padding: 12px 0;
+
+    &:hover {
+      background-color: $medBlack;
+      color: white;
+    }
+
+    &:first-child {
+      width: 80%;
+      text-align: left;
+      padding-left: 25px;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        background-image: url('../images/icon_pdf.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 1em;
+        width: 1em;
+        margin-left: 10px;
+      }
+    }
+
+    &:last-child {
+      width: 20%;
+      background-color: rgb(255, 200, 50);
+
+      &:after {
+        content: '❱';
+        margin-left: 15px;
+      }
+
+      &:hover {
+        background-color: rgb(240, 172, 0);
+      }
+    }
+  }
+}
