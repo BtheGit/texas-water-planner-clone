@@ -1,6 +1,7 @@
 import React from 'react';
 import './MapPage.css';
 import { Helmet } from 'react-helmet';
+import MapView from '../components/MapView';
 
 class MapPage extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class MapPage extends React.Component {
         <Helmet>
           <title>Map Tool</title>
         </Helmet>
-        MAP
+        <MapView />
       </main>
     )
   }
