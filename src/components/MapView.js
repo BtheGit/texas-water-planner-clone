@@ -1,5 +1,4 @@
 import React from 'react';
-import { WebMap } from 'react-arcgis';
 
 class MapView extends React.Component {
   render() {
@@ -19,9 +18,3 @@ class MapView extends React.Component {
 }
 
 export default MapView;
-
-// <Map 
-// <WebMap id="e25b2f84e605423f98f55ba710d26f4f"/>
-// style={{ width: '100vw', height: '100vh' }}
-// mapProperties={{ basemap: 'satellite' }}
-// />
