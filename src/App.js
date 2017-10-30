@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Routes from './containers/Routes';
 import Navbar from './containers/Navbar';
+import ModalRoot from './containers/ModalRoot';
 import './App.css';
 
 const App = () => (
@@ -21,7 +22,8 @@ const App = () => (
     <Navbar key="bb" />,
     <div className="main-container"key="cc">
       <Routes />
-    </div>
+    </div>,
+    <ModalRoot key="dd" />
   ]
 )
 

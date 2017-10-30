@@ -74,3 +74,21 @@
     }
   }
 }
+
+@media screen and (max-width: $smallSize) {
+.dropdown-row {
+
+  a {
+    font-size: 16px;
+
+    &:first-child {
+      width: 70%;
+      padding-left: 10px;
+    }
+
+    &:last-child {
+      width: 30%;
+    }
+  }
+}
+}

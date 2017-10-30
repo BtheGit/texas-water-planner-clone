@@ -6,10 +6,10 @@ class MapView extends React.Component {
       <iframe
         width="100%"
         height="100%"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
-        marginheight="0"
-        marginwidth="0"
+        marginHeight="0"
+        marginWidth="0"
         title="Texas Rivers" 
         src="http://www.arcgis.com/apps/View/index.html?appid=e25b2f84e605423f98f55ba710d26f4f">
       </iframe>

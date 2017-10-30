@@ -1,7 +1,7 @@
-import todolist from './todolist.js';
+import modals from './modals.js';
 
 const reducers = {
-  todolist
+  modals
 }
 
 export default reducers;

@@ -45,3 +45,12 @@
         margin-left: 15px; }
       .dropdown-row a:last-child:hover {
         background-color: #f0ac00; }
+
+@media screen and (max-width: 700px) {
+  .dropdown-row a {
+    font-size: 16px; }
+    .dropdown-row a:first-child {
+      width: 70%;
+      padding-left: 10px; }
+    .dropdown-row a:last-child {
+      width: 30%; } }

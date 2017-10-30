@@ -10,7 +10,6 @@ class Navbar extends React.Component {
     super(props);
     this.state = {
       isPopupActive: false,
-      currentLocation: this.props.location.pathname
     }
   }
 
@@ -18,16 +17,13 @@ class Navbar extends React.Component {
     this.setState({ isPopupActive: !this.state.isPopupActive })
   }
 
-  componentWillReceiveProps() {
-    if(this.props.location.pathname !== this.state.currentLocation) {
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.location.pathname !== this.props.location.pathname) {
       this.setState({
-        currentLocation: this.props.location.pathname,
         isPopupActive: false
       })
     }
-    else {
-      this.setState({currentLocation: this.props.location.pathname})
-    }
+
   }
 
   render() {
