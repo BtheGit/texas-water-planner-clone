@@ -50,7 +50,7 @@ class Navbar extends React.Component {
           <Link to="/" className={loc === '/' ? 'active' : ''}>Home</Link>
           <Link to="/map" className={loc === '/map' ? 'active navbar--item__map' : 'navbar--item__map'}>
             <img className="navbar--image__texas" src={imgTexasWhite} alt="Texas Water Explorer"/>
-            <p>Map</p>
+            <p>Maps</p>
           </Link>
           <Link to="/about" className={loc === '/about' ? 'active' : ''}>About</Link>
           <Link to="/texas-water-basics" className={loc === '/texas-water-basics' ? 'active' : ''}>Basics</Link>

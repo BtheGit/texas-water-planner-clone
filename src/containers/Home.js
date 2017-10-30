@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import './Home.css';
 import imgTexasWhite from '../images/texas-white.png';
 import WaterText from '../components/WaterText';
-import { Helmet } from 'react-helmet';
 
 const Home = props => (
   <main className="home--container">

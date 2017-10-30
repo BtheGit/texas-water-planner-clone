@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Navbar from './Navbar';
 import { shallow } from 'enzyme';
 
-describe("App Container", () => {
+describe("Navbar Container", () => {
   let wrapper;
 
   beforeEach(()=>{
-      wrapper = shallow(<App />)
+      wrapper = shallow(<Navbar />)
   });
 
   it('renders without crashing', () => {

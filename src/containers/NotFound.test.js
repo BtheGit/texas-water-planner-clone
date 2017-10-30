@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import NotFound from './NotFound';
 import { shallow } from 'enzyme';
 
-describe("App Container", () => {
+describe("NotFound Container", () => {
   let wrapper;
 
   beforeEach(()=>{
-      wrapper = shallow(<App />)
+      wrapper = shallow(<NotFound />)
   });
 
   it('renders without crashing', () => {

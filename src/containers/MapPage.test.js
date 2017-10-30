@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import MapPage from './MapPage';
 import { shallow } from 'enzyme';
 
-describe("App Container", () => {
+describe("MapPage Container", () => {
   let wrapper;
 
   beforeEach(()=>{
-      wrapper = shallow(<App />)
+      wrapper = shallow(<MapPage />)
   });
 
   it('renders without crashing', () => {

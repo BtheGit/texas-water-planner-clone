@@ -1,16 +1,14 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import NotFound from './NotFound';
 import Home from './Home';
 import About from './About';
 import Basics from './Basics';
 import MapPage from './MapPage';
+import NotFound from './NotFound';
+import ScrollReset from './ScrollReset';
 
-const ScrollReset = () => {
-  window.scrollTo(0,0);
-  return null;
-}
+
 
 const Routes = () => (
   [

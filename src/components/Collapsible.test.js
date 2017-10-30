@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Collapsible from './Collapsible';
 import { shallow } from 'enzyme';
 
-describe("App Container", () => {
+describe("Collapsible Container", () => {
   let wrapper;
 
   beforeEach(()=>{
-      wrapper = shallow(<App />)
+      wrapper = shallow(<Collapsible />)
   });
 
   it('renders without crashing', () => {
