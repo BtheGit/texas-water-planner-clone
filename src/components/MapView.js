@@ -11,7 +11,7 @@ class MapView extends React.Component {
         marginHeight="0"
         marginWidth="0"
         title="Texas Rivers" 
-        src="http://www.arcgis.com/apps/View/index.html?appid=e25b2f84e605423f98f55ba710d26f4f">
+        src="https://www.arcgis.com/apps/View/index.html?appid=e25b2f84e605423f98f55ba710d26f4f">
       </iframe>
     )
   }

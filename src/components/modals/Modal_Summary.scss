@@ -55,3 +55,9 @@
     }
   }
 }
+
+@media screen and (max-width: $smallSize) {
+  .modal-summary {
+    min-width: 100%;
+  }
+}

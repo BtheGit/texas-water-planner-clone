@@ -38,3 +38,7 @@
       .modal-summary li:hover::after {
         opacity: 1;
         transform: translateX(0); }
+
+@media screen and (max-width: 700px) {
+  .modal-summary {
+    min-width: 100%; } }
